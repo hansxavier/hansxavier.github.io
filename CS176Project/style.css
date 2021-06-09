@@ -78,7 +78,7 @@ header {
 main {
   height: 100%;
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -87,7 +87,15 @@ main section {
   position: relative;
 }
 
+.newsettings {
+  margin: auto;
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .circle {
+  grid-column: 1;
+  grid-row: 1;
   width: 60vw;
   height: 60vw;
   background: transparent;
@@ -98,6 +106,7 @@ main section {
   transition: scale 1ms linear;
   transform: scale(1);
   z-index: -1;
+  margin: auto;
 }
 
 .circle--inner {
