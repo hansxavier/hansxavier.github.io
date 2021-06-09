@@ -207,7 +207,7 @@ class MyUI {
     this.updateSettings();
 
     form.addEventListener("change", () => {
-      this.locks(breathInTime, breathOutTime, breatheLock);
+      this.locks(breatheInTime, breatheOutTime, breatheLock);
       this.locks(holdBetweenTime, holdEndTime, holdLock);
 
       this.storage.updateStorage();
