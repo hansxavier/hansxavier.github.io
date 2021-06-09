@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ang, Datiles, Santos">
+<meta name="description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly.">
+<meta name="theme-color" content="#245619"/>
+
+<meta property="og:title" content="Breathing Exercise Assistance" />
+<meta property="og:description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly." />
+<meta property="og:type" content="website" />
+
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/images/breathe-192.png">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+
+<title>Breathing Exercise Assistance</title>
+
+<script src="index.js" defer></script>
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-color: #232E44 ;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body class="bg img-0">
+	<audio src="music/Serenity_fesliyanstudios.com_David_Renda.mp3" loop></audio>
+	<header>
+		<div class="header--container">
+			<div class="logo--section">
+				<img src="images/circles.svg" alt="Breathe logo" class="logo--image">
+				<span class="logo--text">Breathing Exercise Assistance</span>
+			</div>
+			<span id="settings--icon" class="settings--icon">⚙️</span>
+		</div>
+	</header>
+	<section id="overlay" class="overlay">
+		<div id="overlay--content" class="overlay--content">
+			<form id="settings-form" class="settings-form" onsubmit="event.preventDefault();">
+				<div>
+						<label for="breathe-in">Breathe in: </label><input type="number" name="breathe-in" id="breathe-in" min="1" value="3"><span>s</span><br>
+						<input type="checkbox" name="breathe-lock" id="breathe-lock" checked><label for="breathe-lock">Lock?</label><br>
+						<label for="breathe-out">Breathe out: </label><input type="number" name="breathe-out" id="breathe-out" min="1" value="3"><span>s</span>
+				</div>
+				<div>
+						<label for="hold-between">Hold in between: </label><input type="number" name="hold-between" id="hold-between" min="0" value="2"><span>s</span><br>
+						<input type="checkbox" name="hold-lock" id="hold-lock"><label for="hold-lock">Lock?</label><br>
+						<label for="hold-end">Hold after breathing out: </label><input type="number" name="hold-end" id="hold-end" min="0" value="0"><span>s</span>
+				</div>
+				<div>
+					<input type="checkbox" name="time-remaining" id="time-remaining"><label for="time-remaining">Show time remaining?</label>
+				</div>
+				<div>
+					<input type="checkbox" name="enter-fullscreen" id="enter-fullscreen" checked><label for="enter-fullscreen">Enter fullscreen?</label>
+				</div>
+				<div>
+					<input type="checkbox" name="audio" id="audio" checked><label class="audio" for="audio">Audio?</label>
+				</div>
+				<div>
+					<button class="add-button">Add to home screen</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Breathing App</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><a href="index.html">Click to Start</a></p>
+  </div>
+</div>
+
+</body>
+</html>
