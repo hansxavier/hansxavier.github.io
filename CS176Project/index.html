@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Ang, Datiles, Santos">
-	<meta name="description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly.">
-	<meta name="theme-color" content="#245619"/>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-	<meta property="og:title" content="Breathing Exercise Assistance" />
-	<meta property="og:description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly." />
-	<meta property="og:type" content="website" />
-	
-	<link rel="manifest" href="/manifest.webmanifest">
-	<link rel="apple-touch-icon" href="/images/breathe-192.png">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ang, Datiles, Santos">
+<meta name="description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly.">
+<meta name="theme-color" content="#245619"/>
 
-	<title>Breathing Exercise Assistance</title>
+<meta property="og:title" content="Breathing Exercise Assistance" />
+<meta property="og:description" content="This app guides its users to proper breathing techniques and exercises using clear visual guides and intuitive design. The exercises in this app can also be custom made depending on the user's needs, and also comes with various accessibility features for those with special needs. This app was brought up in mind of those who require to do breathing exercises regularly." />
+<meta property="og:type" content="website" />
 
-	<script src="index.js" defer></script>
-</head>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/images/breathe-192.png">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+
+<title>Breathing Exercise Assistance</title>
+
+<script src="index.js" defer></script>
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-color: #232E44 ;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 <body class="bg img-0">
 	<audio src="music/Serenity_fesliyanstudios.com_David_Renda.mp3" loop></audio>
 	<header>
@@ -60,25 +75,14 @@
 			</form>
 		</div>
 	</section>
-	<main>
-			<section id="circle">
-				<div class="circle center">
-					<div class="circle--inner"></div>
-				</div>
-				<p id="text" class="text">Click on<br/> this circle <br/> to start</p>
-			</section>
-	</main>
-	<footer>
-		<div class="footer--container">
-			Made by Karina Ang, Gabriel Datiles, and Hans Santos, CS176 2021<br>
-	</div>
-	</footer>
-	<script>
-		if('serviceWorker' in navigator){
-			navigator.serviceWorker.register('sw.js')
-					.then(reg => console.log('service worker registered'))
-					.catch(err => console.log('service worker not registered', err));
-		}
-	</script>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Breathing App</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><a href="index.html">Click to Start</a></p>
+  </div>
+</div>
+
 </body>
 </html>
