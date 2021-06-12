@@ -106,6 +106,8 @@ class Breathe {
       this.breathing();
       return this.breathing; 
     })(), timeCombined);
+
+    
   }
 
   stop(){
@@ -224,12 +226,33 @@ class MyUI {
 
       this.toggleElementVisiblity(header);
       this.toggleElementVisiblity(footer);
+
+      let total =
+      
+      this.storage.getStorage().times.breatheInTime + 
+      this.storage.getStorage().times.holdBetweenTime + 
+      this.storage.getStorage().times.breatheOutTime + 
+      this.storage.getStorage().times.holdEndTime;
+
       if(breathe){
         stop();
         audio.pause();
         audio.currentTime = 0;
       } else {
         start();
+        var cycles = document.getElementById("cycles").value;
+
+        console.log(cycles)
+
+        setTimeout(function(){
+          stop();
+          audio.pause();
+          audio.currentTime = 0;
+        },cycles*total);
+        console.log("done");
+
+        audio.pause();
+        audio.currentTime = 0;
         if (canPlayMusic) audio.play();
       }
       this.toggleSettingsClickable();
