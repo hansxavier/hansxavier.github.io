@@ -240,6 +240,7 @@ class MyUI {
         audio.currentTime = 0;
       } else {
         start();
+        if (canPlayMusic) audio.play();
         var cycles = document.getElementById("cycles").value;
 
         console.log(cycles)
@@ -253,7 +254,7 @@ class MyUI {
 
         audio.pause();
         audio.currentTime = 0;
-        if (canPlayMusic) audio.play();
+        
       }
       this.toggleSettingsClickable();
     })
