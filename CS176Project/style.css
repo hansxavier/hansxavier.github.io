@@ -288,12 +288,12 @@ input[type="checkbox"] label {
 }
 
 input[type="checkbox"] + label::after {
-  content:"👎 (no)";
+  content:"❌";
   margin-left: 5px;
 }
 
 input[type="checkbox"]:checked + label::after {
-  content: "👍 (yes)";
+  content: "✔️";
 }
 
 .hide-element {
