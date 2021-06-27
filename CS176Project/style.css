@@ -234,7 +234,7 @@ footer {
 }
 
 .footer--container {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -265,6 +265,22 @@ footer {
   outline: 1px dotted white;
   outline-offset: 1px;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.flex-child {
+  flex: 1;
+  align-content: flex-start;
+  /* border: 2px solid yellow; */
+}  
+
+.flex-child:first-child {
+  margin-right: 50px;
+} 
 
 /* effects and form */
 
