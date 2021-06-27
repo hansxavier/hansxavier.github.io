@@ -23,7 +23,8 @@ body {
 }
 
 .img-0 {
-  background: url("images/bluebg.jpg");
+  /* background: url("images/bluebg.jpg"); */
+  background-color: #232E44;
 }
 
 .bg {
@@ -269,19 +270,23 @@ footer {
 .flex-container {
   display: flex;
   flex-wrap:wrap;
+  align-items: center;
   justify-content: center;
 }
 
 .flex-child {
   flex: 1;
-  align-content: flex-start;
+
   /* border: 2px solid yellow; */
 }  
 
 .flex-child:first-child {
-  margin-right: 50px;
+  margin: 50px;
 } 
 
+.flex-child:second-child {
+  margin: 50px;
+} 
 /* effects and form */
 
 input {
