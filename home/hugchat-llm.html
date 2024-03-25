@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>stlite app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.49.2/build/stlite.css"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.49.2/build/stlite.js"></script>
+    <script>
+stlite.mount(
+  {
+    requirements: ["streamlit", "hugchat", "streamlit-chat", "streamlit-extras"],
+    entrypoint: "streamlit_app.py",
+    files: {
+"streamlit_app.py": `import streamlit as st
+from streamlit_chat import message
+from streamlit_extras.colored_header import colored_header
+from streamlit_extras.add_vertical_space import add_vertical_space
+from hugchat import hugchat
+
+
+# Create a sidebar with some information about your chatbot:
+
+st.set_page_config(page_title="HugChat - An LLM-powered Streamlit app")
+
+with st.sidebar:
+    st.title('🤗💬 HugChat App')
+    st.markdown('''
+    ## About
+    This app is an LLM-powered chatbot built using:
+    - [Streamlit](<https://streamlit.io/>)
+    - [HugChat](<https://github.com/Soulter/hugging-chat-api>)
+    - [OpenAssistant/oasst-sft-6-llama-30b-xor](<https://huggingface.co/OpenAssistant/oasst-sft-6-llama-30b-xor>) LLM model
+    
+    💡 Note: No API key required!
+    ''')
+    add_vertical_space(5)
+    st.write('Made with ❤️ by [Hans Santos](https://github.com/hansxavier)')
+
+
+# Initialize the chatbot by giving it a starter message at the first app run:
+
+if 'generated' not in st.session_state:
+    st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
+
+if 'past' not in st.session_state:
+    st.session_state['past'] = ['Hi!']
+
+# Give the app a general layout. The main panel will display the chat query and responses:
+
+input_container = st.container()
+colored_header(label='', description='', color_name='blue-30')
+response_container = st.container()
+
+
+# User input
+## Function for taking user provided prompt as input
+def get_text():
+    input_text = st.text_input("You: ", "", key="input")
+    return input_text
+
+## Applying the user input box
+with input_container:
+    user_input = get_text()
+
+# Response output
+## Function for taking user prompt as input followed by producing AI generated responses
+def generate_response(prompt):
+    chatbot = hugchat.ChatBot()
+    response = chatbot.chat(prompt)
+    return response
+
+## Conditional display of AI generated responses as a function of user provided prompts
+with response_container:
+    if user_input:
+        response = generate_response(user_input)
+        st.session_state.past.append(user_input)
+        st.session_state.generated.append(response)
+        
+    if st.session_state['generated']:
+        for i in range(len(st.session_state['generated'])):
+            message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+            message(st.session_state['generated'][i], key=str(i))`,
+
+},
+  },
+  document.getElementById("root")
+)
+
+    </script>
+  </body>
+  <!-- Generated from stlite sharing (https://edit.share.stlite.net/), and the source version is f5e97b88059375787150f3f2d0f1badeda83d522 -->
+</html>
