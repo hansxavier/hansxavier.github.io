@@ -1,1 +1,325 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans Xavier Santos - Data Solutions Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Source+Code+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Welcome to my page!</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hans Santos</h1>
+            <p class="subtitle">Solutions Engineer & Data Architecture Specialist</p>
+            <div class="contact-info">
+                <a href="mailto:hansxaviersantos@gmail.com"><i class="fas fa-envelope"></i> hansxaviersantos@gmail.com</a>
+                <a href="tel:+639762050580"><i class="fas fa-phone"></i> (+63) 976 205 0580</a>
+                <a href="https://linkedin.com/in/hansxaviersantos" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/250x250/667eea/ffffff?text=HS" alt="Hans Xavier Santos">
+                </div>
+                <div class="about-content">
+                    <p>
+                        Solutions Engineer with years of experience in designing and implementing scalable data solutions for enterprise customers in logistics, telecommunications, e-commerce, and renewable energy. I have a proven ability to architect cloud-based data architectures in Azure, GCP, and Snowflake that address complex business challenges, improve operational efficiency, and unlock actionable insights.
+                    </p>
+                    <p>
+                        I specialize in delivering customized, forward-thinking solutions that drive digital transformation and achieve key business goals. My expertise spans across modern data stack technologies, MLOps, and enterprise-scale cloud migrations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Data Consultant</h3>
+                        <div class="company">Asian Development Bank</div>
+                        <div class="date">November 2024 – Present | Metro Manila, PH</div>
+                        <ul>
+                            <li>Working with Azure and Databricks for enterprise data solutions</li>
+                            <li>Leading DevOps and Data Engineering initiatives</li>
+                            <li>Creating new products that optimize data workflows and processing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Founder, Independent Consultant</h3>
+                        <div class="company">HXS Information Technology Services</div>
+                        <div class="date">July 2024 – November 2024 | Metro Manila, PH</div>
+                        <ul>
+                            <li>Provided independent consulting services for data solutions</li>
+                            <li>Specialized in cloud architecture and data engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Enterprise Solutions Engineer</h3>
+                        <div class="company">Thinking Machines Data Science Inc.</div>
+                        <div class="date">July 2020 – July 2024 | Singapore, SG</div>
+                        <ul>
+                            <li>Led the design and implementation of enterprise data platforms across multiple use cases and industries</li>
+                            <li>Architectured scalable, secure technical architectures across cloud platforms (Azure, GCP, Snowflake)</li>
+                            <li>Pioneered the adoption of Modern Data Stack technologies and MLOps</li>
+                            <li>Delivered expert technical consulting to internal and external stakeholders</li>
+                            <li>Designed streaming and batch data ingestion pipelines, reducing processing time from days to 10 minutes</li>
+                            <li>Automated data workflows and implemented ETL processes</li>
+                            <li>Utilized dbt to structure and maintain Data Warehouse tables in star schema design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Research Apprentice</h3>
+                        <div class="company">Senti AI</div>
+                        <div class="date">July 2019 – December 2019 | Metro Manila, PH</div>
+                        <ul>
+                            <li>Performed comprehensive exploratory data analysis and data visualization</li>
+                            <li>Applied Statistical Machine Learning on large datasets using Python, Pandas, and SQL</li>
+                            <li>Created presentations and data storytelling guidelines for client presentations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Google Cloud Platform</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">Databricks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Data Engineering Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Airbyte</span>
+                        <span class="skill-tag">Dagster</span>
+                        <span class="skill-tag">dbt</span>
+                        <span class="skill-tag">ETL/ELT</span>
+                        <span class="skill-tag">Data Pipelines</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Domains</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning/AI</span>
+                        <span class="skill-tag">Data Engineering</span>
+                        <span class="skill-tag">Systems Engineering</span>
+                        <span class="skill-tag">MLOps</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Consulting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Technical Architecture</span>
+                        <span class="skill-tag">Data Consulting</span>
+                        <span class="skill-tag">ML Consulting</span>
+                        <span class="skill-tag">Cloud Migration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=HugChat+LLM" alt="HugChat LLM Project">
+                    <div class="project-content">
+                        <h3>HugChat LLM Application</h3>
+                        <p>Deployed a lightweight LLM application using OpenAssistant LLaMa 30B model, making AI accessible through a clean web interface hosted on GitHub Pages.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">stlite</span>
+                            <span class="tech-tag">LLaMa 30B</span>
+                            <span class="tech-tag">GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/764ba2/ffffff?text=Enterprise+Data+Platform" alt="Enterprise Data Platform">
+                    <div class="project-content">
+                        <h3>Enterprise Data Platforms</h3>
+                        <p>Designed and implemented scalable data platforms for enterprise clients across logistics, telecommunications, and renewable energy sectors.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">dbt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=ML+Pipeline" alt="ML Pipeline">
+                    <div class="project-content">
+                        <h3>MLOps & Data Pipelines</h3>
+                        <p>Built streaming and batch data ingestion pipelines that reduced data processing time from days to minutes, implementing modern MLOps practices.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dagster</span>
+                            <span class="tech-tag">Airbyte</span>
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">Real-time Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <h3>University of the Philippines - Diliman</h3>
+                <div class="degree">Bachelor of Science, Computer Science</div>
+                <div class="honors">Cum Laude, University Scholar</div>
+                <p><strong>Thesis:</strong> Cell Profiling of Chemically Perturbed Cell Images using Deep Convolutional Neural Networks</p>
+                <p><strong>Graduated:</strong> July 2021 | Quezon City, PH</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get In Touch</h2>
+            <div class="social-links">
+                <a href="mailto:hansxaviersantos@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+639762050580"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/hansxaviersantos" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/hansxavier" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Hans Xavier Santos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+        
+        function toggleMobileMenu() {
+            navLinks.classList.toggle('nav-open');
+            mobileMenuToggle.classList.toggle('menu-open');
+            navOverlay.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navLinks.classList.contains('nav-open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        function closeMobileMenu() {
+            navLinks.classList.remove('nav-open');
+            mobileMenuToggle.classList.remove('menu-open');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close mobile menu when clicking on overlay
+        navOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu when pressing escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('nav-open')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
